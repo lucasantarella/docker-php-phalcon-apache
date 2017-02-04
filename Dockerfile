@@ -12,8 +12,7 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 # Install Source Dependancies
 RUN apt-get -y update && apt-get -y install \
 	git \
-	unzip \
-	php7.0-mysql
+	unzip
 
 # Compile Phalcon
 RUN set -xe && \
