@@ -26,4 +26,7 @@ RUN set -xe && \
         mv phalcon-devtools-${PHALCON_VERSION} /usr/local/phalcon-devtools && \
         ln -s /usr/local/phalcon-devtools/phalcon.php /usr/local/bin/phalcon
 
+# Enable Apache modules
+RUN a2enmod headers rewrite
+
 WORKDIR /var/www/html
