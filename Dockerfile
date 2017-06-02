@@ -1,4 +1,4 @@
-FROM php:7.0.15-apache
+FROM php:7.1.5-apache
 MAINTAINER Luca Santarella <luca.santarella@gmail.com>
 
 # Install MySql PDO
