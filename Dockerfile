@@ -16,7 +16,7 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 RUN apt-get -y update && apt-get -y install \
 	git \
 	unzip \
-	python-pip
+	jq
 
 # Compile Phalcon
 RUN set -xe && \
