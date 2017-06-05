@@ -15,7 +15,8 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 # Install Source Dependancies
 RUN apt-get -y update && apt-get -y install \
 	git \
-	unzip
+	unzip \
+	python-pip
 
 # Compile Phalcon
 RUN set -xe && \
